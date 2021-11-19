@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "replanlists",
+  "info": {
+    "name": "replan",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "plan_name": {
+      "type": "string"
+    },
+    "plansummary": {
+      "type": "text"
+    },
+    "plan_file": {
+      "type": "string"
+    },
+    "replan_depts": {
+      "collection": "replan-dept",
+      "via": "replan"
+    }
+  }
+}

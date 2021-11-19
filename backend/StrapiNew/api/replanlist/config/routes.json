@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/replanlists",
+      "handler": "replanlist.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/replanlists/count",
+      "handler": "replanlist.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/replanlists/:id",
+      "handler": "replanlist.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/replanlists",
+      "handler": "replanlist.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/replanlists/:id",
+      "handler": "replanlist.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/replanlists/:id",
+      "handler": "replanlist.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

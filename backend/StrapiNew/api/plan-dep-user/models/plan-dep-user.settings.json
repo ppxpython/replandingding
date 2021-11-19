@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plan_dep_users",
+  "info": {
+    "name": "plan_dep_user",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "dep_user_name": {
+      "type": "string"
+    },
+    "plan_flow_user_deps": {
+      "collection": "plan-flow-user-dep",
+      "via": "plan_dep_user"
+    },
+    "dd_user_id": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "plan_dep": {
+      "via": "plan_dep_users",
+      "model": "plan-dep"
+    }
+  }
+}

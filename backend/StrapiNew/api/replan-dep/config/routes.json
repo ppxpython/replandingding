@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/replan-dep",
+      "handler": "replan-dep.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/replan-dep",
+      "handler": "replan-dep.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/replan-dep",
+      "handler": "replan-dep.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

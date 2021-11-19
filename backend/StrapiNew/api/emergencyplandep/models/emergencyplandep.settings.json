@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "emergencyplandeps",
+  "info": {
+    "name": "emergencyplandep"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "plan_dep_id": {
+      "type": "uid"
+    },
+    "plan_dep_name": {
+      "type": "string"
+    },
+    "plan_id": {
+      "type": "integer"
+    },
+    "emergencyplan": {
+      "via": "emergencyplandeps",
+      "model": "emergencyplan"
+    }
+  }
+}

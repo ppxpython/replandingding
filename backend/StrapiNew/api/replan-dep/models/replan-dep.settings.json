@@ -1,0 +1,14 @@
+{
+  "kind": "singleType",
+  "collectionName": "replan_deps",
+  "info": {
+    "name": "replan_dep",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {}
+}

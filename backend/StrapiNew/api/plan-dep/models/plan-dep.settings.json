@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plan_deps",
+  "info": {
+    "name": "plan_dep",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "dep_name": {
+      "type": "string"
+    },
+    "plan_dep_users": {
+      "collection": "plan-dep-user",
+      "via": "plan_dep"
+    },
+    "dd_sub_dep_id": {
+      "type": "string"
+    },
+    "plan": {
+      "via": "plan_deps",
+      "model": "plan"
+    },
+    "plan_flow": {
+      "via": "plan_deps",
+      "model": "plan-flow"
+    }
+  }
+}

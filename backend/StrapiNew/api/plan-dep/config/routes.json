@@ -1,0 +1,51 @@
+{
+    "routes": [{
+            "method": "GET",
+            "path": "/plan-deps",
+            "handler": "plan-dep.find",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/plan-deps/count",
+            "handler": "plan-dep.count",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/plan-deps/:id",
+            "handler": "plan-dep.findOne",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "POST",
+            "path": "/plan-deps",
+            "handler": "plan-dep.create",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "POST",
+            "path": "/plan-deps/:id",
+            "handler": "plan-dep.update",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "DELETE",
+            "path": "/plan-deps/:id",
+            "handler": "plan-dep.delete",
+            "config": {
+                "policies": []
+            }
+        }
+    ]
+}

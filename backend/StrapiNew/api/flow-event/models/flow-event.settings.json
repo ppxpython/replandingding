@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "flow_events",
+  "info": {
+    "name": "flow_event"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "status": {
+      "type": "string"
+    },
+    "flow_content": {
+      "type": "string"
+    },
+    "plan_flow": {
+      "model": "plan-flow",
+      "via": "flow_events"
+    },
+    "plan_event": {
+      "via": "flow_events",
+      "model": "plan-event"
+    }
+  }
+}

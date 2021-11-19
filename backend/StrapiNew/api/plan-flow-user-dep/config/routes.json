@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/plan-flow-user-deps",
+      "handler": "plan-flow-user-dep.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plan-flow-user-deps/count",
+      "handler": "plan-flow-user-dep.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plan-flow-user-deps/:id",
+      "handler": "plan-flow-user-dep.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plan-flow-user-deps",
+      "handler": "plan-flow-user-dep.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/plan-flow-user-deps/:id",
+      "handler": "plan-flow-user-dep.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/plan-flow-user-deps/:id",
+      "handler": "plan-flow-user-dep.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

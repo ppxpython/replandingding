@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plan_flow_users",
+  "info": {
+    "name": "plan_flow_user"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "flow_username": {
+      "type": "string"
+    },
+    "plan_flow": {
+      "via": "plan_flow_users",
+      "model": "plan-flow"
+    }
+  }
+}

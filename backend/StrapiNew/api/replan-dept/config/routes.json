@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/replan-depts",
+      "handler": "replan-dept.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/replan-depts/count",
+      "handler": "replan-dept.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/replan-depts/:id",
+      "handler": "replan-dept.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/replan-depts",
+      "handler": "replan-dept.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/replan-depts/:id",
+      "handler": "replan-dept.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/replan-depts/:id",
+      "handler": "replan-dept.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

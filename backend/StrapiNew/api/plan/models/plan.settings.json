@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plans",
+  "info": {
+    "name": "plan",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "plan_deps": {
+      "collection": "plan-dep",
+      "via": "plan"
+    },
+    "plan_flows": {
+      "collection": "plan-flow",
+      "via": "plan"
+    },
+    "plan_summary": {
+      "type": "text"
+    },
+    "dd_plan_dep_id": {
+      "type": "string"
+    },
+    "planName": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "count": {
+      "type": "integer"
+    },
+    "plan_events": {
+      "via": "plan",
+      "collection": "plan-event"
+    }
+  }
+}

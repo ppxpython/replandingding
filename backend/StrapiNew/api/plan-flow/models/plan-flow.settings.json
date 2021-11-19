@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plan_flows",
+  "info": {
+    "name": "plan_flow",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "flow_name": {
+      "type": "string"
+    },
+    "plan": {
+      "via": "plan_flows",
+      "model": "plan"
+    },
+    "plan_flow_users": {
+      "collection": "plan-flow-user",
+      "via": "plan_flow"
+    },
+    "flow_content": {
+      "type": "text"
+    },
+    "plan_deps": {
+      "collection": "plan-dep",
+      "via": "plan_flow"
+    },
+    "dd_dep_id_str": {
+      "type": "text"
+    },
+    "flow_events": {
+      "via": "plan_flow",
+      "collection": "flow-event"
+    }
+  }
+}

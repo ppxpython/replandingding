@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/emergencyplandeps",
+      "handler": "emergencyplandep.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/emergencyplandeps/count",
+      "handler": "emergencyplandep.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/emergencyplandeps/:id",
+      "handler": "emergencyplandep.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/emergencyplandeps",
+      "handler": "emergencyplandep.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/emergencyplandeps/:id",
+      "handler": "emergencyplandep.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/emergencyplandeps/:id",
+      "handler": "emergencyplandep.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

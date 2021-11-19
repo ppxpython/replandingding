@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plan_flow_user_deps",
+  "info": {
+    "name": "plan_flow_user_dep"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "plan_dep_user": {
+      "via": "plan_flow_user_deps",
+      "model": "plan-dep-user"
+    },
+    "dep_name": {
+      "type": "string"
+    }
+  }
+}

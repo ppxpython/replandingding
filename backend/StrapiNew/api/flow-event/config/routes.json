@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/flow-events",
+      "handler": "flow-event.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/flow-events/count",
+      "handler": "flow-event.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/flow-events/:id",
+      "handler": "flow-event.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/flow-events",
+      "handler": "flow-event.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/flow-events/:id",
+      "handler": "flow-event.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/flow-events/:id",
+      "handler": "flow-event.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
