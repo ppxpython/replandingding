@@ -11,7 +11,7 @@
 3.数据库采用mysql来实现
 
 ### 界面展示
-小程序首页
+ 
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1119/232624_4e96cb06_5477733.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1119/232658_f9694979_5477733.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1119/232713_0266461d_5477733.png "屏幕截图.png")
@@ -23,7 +23,7 @@
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1119/232818_59d2245c_5477733.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1119/232828_d2f8a577_5477733.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1119/232604_8ed078ff_5477733.png "屏幕截图.png")
-
+视频：点击跳转https://www.bilibili.com/video/BV1vo4y117ce?spm_id_from=333.999.0.0
 #### 安装教程
 安装环境：
 
