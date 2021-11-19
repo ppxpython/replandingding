@@ -1,0 +1,40 @@
+<view class="item-cells no-top">
+  <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text>预案名称</text>
+    </view>
+    <view class="item-cell-ft blue">
+      <input onFocus="namefocus" onBlur="blurfocus" placeholder-style="color:#999;font-weight:bold;" type="text" maxlength="12" value="{{plan_name}}" placeholder="{{user}}" />
+    </view>
+  </view>
+  </view>
+    
+   <view class="item-cell">
+    <view class="item-cell-bd">
+      <text>预案描述</text>
+    </view>
+  </view>
+  <view class="item-cell-textarea">
+    <textarea onInput="plan_summaryTap"  onFocus="plan_summaryfocus" onBlur=" plan_summaryblur" class="item-textarea big bg" value="{{plan_summary}}" placeholder="{{plan_summary}}" maxlength="200" />
+    <view class="textarea-count">
+      <text>{{plan_summaryLen}}/200</text>
+    </view>
+  </view>
+   <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text onTap="uploud">点击上传预案文件</text>
+    </view>
+     
+  </view>
+  </view>
+  
+<!-- <view class="btn-box"  a:if="{{isHaveResume}}">
+  <button class="btn-sure" size="default" hover-class="btn-sure-hover" catchTap="submitResumeBaseTap"> 保存 </button>
+</view> -->
+
+<view class="btn-box">
+  <button class="btn-sure m-b" size="default" hover-class="btn-sure-hover" catchTap="subNext"> 下一步 </button>
+  <button class="btn-remove" size="default" hover-class="btn-sure-hover" catchTap="backIndex"> 返回首页 </button>
+</view> 
+  
+ 

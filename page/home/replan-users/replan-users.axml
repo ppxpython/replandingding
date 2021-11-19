@@ -1,0 +1,15 @@
+</view>
+ <view class="list">
+ <view class="card short-card"  a:for="{{userlist}}" a:for-index="id">
+    <!-- <view class="card short-card" wx:for="{{users}}" wx:key="index" wx:for-item="item" data-id="{{item.categoryId}}" > -->
+        <view><text class="title">{{item.name}}</text></view>
+        <!-- <view><text class="intro">{{ item.userid }}</text></view> -->
+        </view>
+    <!-- </view> -->
+    </view>
+  </view>
+   <view class="weui-loadmore weui-loadmore_line">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">到底啦</view>
+        </view>
+</view>
+ 

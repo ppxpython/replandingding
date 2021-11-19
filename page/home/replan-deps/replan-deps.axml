@@ -1,0 +1,23 @@
+<!-- <view a:for={{deps}}>
+</view>
+
+<navigator url="../replan-users/replan-users?id={{item.dd_sub_dep_id}}" a:for="{{deps}}" a:for-index="id">
+<view>
+{{item.dep_name}}
+</view>
+</navigator> -->
+
+
+ <view class="list">
+ <navigator class="card short-card" url="../replan-users/replan-users?id={{item.dd_sub_dep_id}}" a:for="{{deps}}" a:for-index="id">
+    <!-- <view class="card short-card" wx:for="{{users}}" wx:key="index" wx:for-item="item" data-id="{{item.categoryId}}" > -->
+        <view><text class="title">{{item.dep_name}}</text></view>
+        <!-- <view><text class="intro">{{ item.userid }}</text></view> -->
+        </view>
+    <!-- </view> -->
+    </navigator>
+  </view>
+   <view class="weui-loadmore weui-loadmore_line">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">到底啦</view>
+        </view>
+</view>

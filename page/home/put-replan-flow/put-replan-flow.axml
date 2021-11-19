@@ -1,0 +1,39 @@
+<!--pages/edit-resume-edu-detail/edit-resume-edu-detail.wxml-->
+<view class="item-cells no-top">
+  <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text>流程名称</text>
+    </view>
+    <view class="item-cell-ft blue">
+      <input type="text" value="{{flow_name}}"  onFocus="schoolfocus" onBlur="schoolblur" placeholder="{{school}}" />
+    </view>
+  </view>
+  <!-- <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text>流程内容</text>
+    </view>
+    <view class="item-cell-ft blue">
+      <input type="text" onFocus="majorfocus" onBlur="majorblur" value="{{flow_content}}" placeholder="{{major}}"/>
+    </view>
+  </view> -->
+
+     <view class="item-cell">
+    <view class="item-cell-bd">
+      <text>流程描述</text>
+    </view>
+  </view>
+  <view class="item-cell-textarea">
+    <textarea onInput="flowTap"  onFocus="majorfocus" onBlur="majorblur" class="item-textarea big bg" value="{{flow_content}}" placeholder="{{major}}" maxlength="200" />
+    <view class="textarea-count">
+      <text>{{flow_contentLen}}/200</text>
+    </view>
+  </view>
+  <!-- 添加 -->
+   
+
+</view> 
+<view class="btn-box">
+  <button class="btn-remove" size="default" hover-class="btn-sure-hover" hidden="{{isadd}}" catchTap="removeSchoolTap"> 删除流程 </button>
+  <button class="btn-sure" size="default" hover-class="btn-sure-hover" catchTap="submitSchoolTap"> 保存 </button>
+</view>
+

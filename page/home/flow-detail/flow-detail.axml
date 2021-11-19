@@ -1,0 +1,45 @@
+ 
+    
+<view class="user_addr_manage" >
+    <view class="user_addr_title">【发送流程】</view>
+    <block >
+      <view class="user_addr_item">
+          <text class="addr_sub">流程名：{{flow.flow_name}}</text>
+          <view class="addr_edit"></view>
+      </view> 
+    </block>
+     <block >
+      <view class="user_addr_item">
+          <text class="addr_sub" onTap='call'>流程内容：{{flow.flow_content}}</text>
+          <view class="addr_edit"></view>
+      </view> 
+    </block>
+      <block >
+      <view class="user_addr_item" a:for="{{user_name_info}}">
+          <text class="addr_sub" onTap="take">姓名【{{index+1}}】：{{item}}</text>
+          <view class="addr_edit"></view>
+      </view> 
+         <view class="btn-box">
+         <button class="btn-sure" size="default" hover-class="btn-sure-hover" catchTap="call"> 发送流程信息 </button>
+       </view>
+      
+    </block>
+    
+    
+ </view>
+  
+</view>
+ 
+ 
+
+ 
+ 
+ 
+
+
+
+ 
+  
+ 
+ 
+  

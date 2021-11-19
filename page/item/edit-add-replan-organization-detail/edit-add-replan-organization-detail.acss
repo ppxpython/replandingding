@@ -1,0 +1,30 @@
+/* pages/edit-resume-work-detail/edit-resume-work-detail.wxss */
+@import "/util/style/blue-btn.acss";
+@import "/util/style/item-cells.acss";
+.btn-box{
+  margin-top: 80rpx;
+}
+.company wx-input{
+  width: 400rpx;
+}
+text{
+  color: #666;
+}
+view,input{
+  color: #222;
+  font-weight: bold;
+}
+/* 选择框的样式 */
+.checkbox {
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+button + button {
+  margin-top: 32rpx;
+}
+
+.checkbox-text {
+  font-size:34rpx;
+  line-height: 1.2;
+}

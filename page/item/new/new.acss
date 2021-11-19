@@ -1,0 +1,36 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+
+.title {
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 96%;
+  font-size: 28rpx;
+  text-align: center;
+  margin-left: 3%;
+  border-bottom: 10rpx solid #f2f2f2;
+}
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 

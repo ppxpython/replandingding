@@ -1,0 +1,50 @@
+
+ 
+ 
+<view class="item-cells no-top">
+  <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text>预案机构名称</text>
+    </view>
+    <view class="item-cell-ft company blue">
+      <input type="text" onFocus="orporatenamefocus" onBlur="orporatenameblur" value="{{plan_dep_name}}" placeholder="{{orporatename}}" />
+    </view>
+  </view>
+ 
+  <view class="item-cell item-cell-input">
+    <view class="item-cell-bd" onTap="change">
+      <text>选人员</text>
+    </view>
+    <view class="item-cell-ft blue">
+   
+    </view>
+  </view>
+<view class="page">
+  <view class="page-description"> </view>
+  <form onSubmit="onSubmit" onReset="onReset">
+    <view class="page-section">
+      <view class="page-section-title"> </view>
+      <view class="page-section-demo">
+        <checkbox-group onChange="onChange" name="libs">
+          <label class="checkbox" a:for="{{all_user_list}}" key="label-{{index}}">
+            <checkbox value="{{item.userid}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />
+            <text class="checkbox-text">{{item.name}}</text>
+          </label>
+        </checkbox-group>
+      </view>
+      <view class="btn-box">
+        <view><button  class="btn-sure" size="default" hover-class="btn-sure-hover"  formType="submit">确定人员</button></view>
+      </view>
+    </view>
+  </form>
+</view>  
+
+ 
+
+</view> 
+<view class="btn-box">
+  <button class="btn-remove" size="default" hover-class="btn-sure-hover" hidden="{{isadd}}" catchTap="removeCompanyTap"> 删除预案组织 </button>
+  <button class="btn-sure" size="default" hover-class="btn-sure-hover" catchTap="submitCompanyTap" formType="submit"> 保存 </button>
+</view>
+
+ 

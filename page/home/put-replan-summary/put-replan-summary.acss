@@ -1,0 +1,23 @@
+  
+@import "/util/style/blue-btn.acss";
+@import "/util/style/item-cells.acss";  
+text {
+  color:rgb(12, 12, 12);
+}
+view{
+  color:#222;
+  font-weight: bold;
+}
+ input{ 
+  font-family:Sans-serif;
+  color:#222;
+  font-weight: bold;
+ 
+}
+.item-cell-ft blue{
+    display:flex;
+align-items:center;
+
+
+}
+

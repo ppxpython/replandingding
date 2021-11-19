@@ -1,0 +1,112 @@
+ <!-- <script src="{% static '/jquery-3.4.1.js' %}"></script>
+  <view class='main-wrapper'>
+  <replanflowstatus      
+       folProbCount='{{myDetail.attention_question_num}}' folPersonCount='{{myDetail.attention_user_num}}'
+    folSelfCount='{{myDetail.follow_num}}' /> -->
+
+<view class='top-wrapper'>
+  <view class='top-container'>
+    <view class='action-container'>
+      <view class='edit'>     
+      </view>
+    </view>
+  </view>
+  <view class='follow-container'>
+    <view class='follow-item' catchtap='_jumptoFollowProblem'>
+      <text>{{art.planName}}</text>
+      <text > </text>
+      
+    </view>
+  
+  </view>
+</view>
+
+ 
+      
+
+<!--navigator-->
+  <view class="title">
+      <text>预案情况</text>
+    </view>
+    <view class="navigator"  >
+        <navigator url="../replan-detail/replan-detail?id={{art.id}}&title={{art.planName}}&flow={{replanflaw}}">
+            <image class="icon" src="../../../image/news.png" />
+            <view class="title">
+                <text>基本信息</text>
+            </view>
+        </navigator>
+        <navigator url="../replan-deps/replan-deps?id={{art.id}}&plan={{plan}}">
+            <image class="icon" src="../../../image/jobs.png" />
+            <view class="title">
+                <text>预案组织</text>
+            </view>
+        </navigator>
+        <navigator url="../doreplan/doreplan?id={{art.id}}&title={{art.planName}}&flow={{replanflaw}}">
+            <image class="icon" src="../../../image/job.png" />
+            <view class="title">
+                <text>启动预案</text>
+            </view>
+        </navigator>
+        <!-- <navigator > -->
+        <view class="delectplan">
+            <image class="icon" src="../../../image/kc.png" />
+            <view class="title" onTap="delect_replan">
+                <text>删除预案</text>
+            </view>
+        <navigator >
+        </view>   
+    </view>
+
+
+<view class="block">
+    <view class="title">
+      <text>预案描述</text>
+    </view>
+    <view class="case" >
+      <navigator url="../put-replan-summary/put-replan-summary?id={{art.id}}&plan_summary= {{art.plan_summary}}">
+        <view class="item bdbt">
+          <!-- <view class="lt">
+            
+          </view> -->
+            <!-- <view class="rt">     -->
+             <view class='font'>   
+              {{art.plan_summary}}
+           </view>  
+          
+          <!-- </view>  --> 
+        </view>
+      </navigator>
+    </view> 
+  </view>   
+</view>
+
+  <view class='content-wrapper'>
+   <view class="title">
+      <text>启动预案时间</text>
+    </view>
+    <view class="navigator" a:for="{{plan_event}}">
+        <!-- <view url="../recruitList/recruitList"> -->
+          <navigator >
+            <image class="icon" src="../../../image/replan.png" /> 
+        </navigator>
+        <view class="title"   >
+           <text>{{item.created_at}}</text>
+        </view>
+        
+         <view class="title" >
+                 
+          
+              <text>{{index+1}}</text>
+            </view> 
+            <!-- </view> -->
+            
+      
+                           
+             </navigator>
+    
+
+    </view>
+ 
+
+      
+ 

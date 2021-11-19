@@ -1,0 +1,85 @@
+<!--pages/edit-resume-edu-detail/edit-resume-edu-detail.wxml-->
+<view class="item-cells no-top">
+  <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text>流程名称</text>
+    </view>
+    <view class="item-cell-ft blue">
+      <input type="text" value="{{flow_name}}"  onFocus="schoolfocus" onBlur="schoolblur" placeholder="{{school}}" />
+    </view>
+  </view>
+ 
+
+     <view class="item-cell">
+    <view class="item-cell-bd">
+      <text>流程描述</text>
+    </view>
+  </view>
+  <view class="item-cell-textarea">
+    <textarea onInput="flowTap"  onFocus="majorfocus" onBlur="majorblur" class="item-textarea big bg" value="{{flow_content}}" placeholder="{{major}}" maxlength="200" />
+    <view class="textarea-count">
+      <text>{{flow_contentLen}}/200</text>
+    </view>
+  </view>
+    <view class="item-cell item-cell-input">
+    <view class="item-cell-bd" onTap="change">
+      <text>点击选人员</text>
+    </view>
+    <view class="item-cell-ft blue">
+   
+    </view>
+  </view>
+<view class="page">
+  <view class="page-description"> </view>
+  <form onSubmit="onSubmit" onReset="onReset">
+    <view class="page-section">
+      <view class="page-section-title"> </view>
+      <view class="page-section-demo">
+        <checkbox-group onChange="onChange" name="libs">
+          <label class="checkbox" a:for="{{all_user_list}}" key="label-{{index}}">
+            <checkbox value="{{item.userid}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />
+            <text class="checkbox-text">{{item.name}}</text>
+          </label>
+        </checkbox-group>
+      </view>
+      <view class="btn-box">
+        <view><button  class="btn-sure" size="default" hover-class="btn-sure-hover"  formType="submit">确定人员</button></view>
+      </view>
+    </view>
+  </form>
+</view>  
+  <!-- 添加 -->
+   <!-- <view class="item-cell item-cell-input">
+    <view class="item-cell-bd" onTap="change">
+      <text>选择预案组织</text>
+    </view>
+    <view class="item-cell-ft blue">
+   
+    </view>
+  </view>
+<view class="page">
+  <view class="page-description"> </view>
+  <form onSubmit="onSubmit" onReset="onReset">
+    <view class="page-section">
+      <view class="page-section-title"> </view>
+      <view class="page-section-demo">
+        <checkbox-group onChange="onChange" name="libs">
+          <label class="checkbox" a:for="{{dd_dep_id_list}}" key="label-{{index}}">
+            <checkbox value="{{item.dept_id}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />
+            <text class="checkbox-text">{{item.name}}</text>
+          </label>
+        </checkbox-group>
+      </view>
+      <view class="btn-box">
+        <view><button  class="btn-sure" size="default" hover-class="btn-sure-hover"  formType="submit">确定分配预案组织</button></view>
+      </view>
+    </view>
+  </form>
+</view>   -->
+
+</view> 
+<view class="btn-box">
+  <button class="btn-remove" size="default" hover-class="btn-sure-hover" hidden="{{isadd}}" catchTap="removeSchoolTap"> 删除流程 </button>
+  <button class="btn-sure" size="default" hover-class="btn-sure-hover" catchTap="submitSchoolTap"> 保存 </button>
+</view>
+

@@ -1,0 +1,6 @@
+<view onTap="unpon">
+  上传文件
+</view>
+
+
+<view onTap="see">查看</view>

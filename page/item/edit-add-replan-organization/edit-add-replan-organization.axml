@@ -1,0 +1,31 @@
+<!--pages/edit-resume-work/edit-resume-work. ddml-->
+<view class="work-box">
+<view class="work-items">
+
+ <view class="work-item"   a:for="{{resumeWorkList}}"  a:for-item="resumeWorkList"  a:key="{{resumeWorkList.dept_id}}">
+    <view  catchTap="editWorkListTap" data-workid="{{resumeWorkList.dept_id}}">
+      <view class="work-date">
+        <text>{{resumeWorkList.dept_id}} </text>
+        <view class="edit-btn blue">
+        <!-- <navigator url="../edit-add-replan-organization-detail/edit-add-replan-organization-detail?work_id={{resumeWorkList.dept_id}}" > -->
+          <image class="icon-edit" src="/images/edit_pen.png"></image>
+          <text>编辑</text>
+          <!-- </navigator> -->
+        </view>
+      </view>
+      <view class="work-company">{{resumeWorkList.name}}</view>
+      
+      <view class="work-content">{{resumeWorkList.workContent}}</view>
+    </view>
+
+  </view>
+</view>
+ 
+</view>
+
+<view class="btn-box">
+  <button class="btn-sure m-b" size="default" hover-class="btn-sure-hover" catchTap="editWorkListTap"> 添加预案组织 </button>
+  <button hidden="{{isHaveResume}}" class="btn-sure m-b" size="default" hover-class="btn-sure-hover" catchTap="subNext"> 下一步 </button>
+  <button hidden="{{isHaveResume}}" class="btn-remove" size="default" hover-class="btn-sure-hover" catchTap="subPre"> 上一步 </button>
+  
+</view>

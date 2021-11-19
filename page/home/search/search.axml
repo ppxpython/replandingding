@@ -1,0 +1,20 @@
+<!--page/component/input/input.axml-->
+ 
+
+  <view class="page-section">
+    <view class="page-section-title">搜索框</view>
+    <view class="page-section-demo">
+      <view class="search-outer">
+        <input
+          class="search-input"
+          placeholder="搜索"
+          value="{{search}}"
+          onConfirm="doneSearch"
+          onInput="handleSearch"
+        />
+        <text class="search-cancel" onTap="clearSearch">取消</text>
+      </view>
+    </view>
+  </view>
+</view>
+   <view class="extra-info">你输入的是：{{search}}</view>

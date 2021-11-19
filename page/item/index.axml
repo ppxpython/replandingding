@@ -1,0 +1,102 @@
+<!-- <!-- 跳转预案列表 -->
+ <navigator url="/page/home/replanList/replanList">
+<view class="index_menu_box"  >
+  <view class="index_menu_left">
+    <text>预案列表</text>
+  </view>
+  <view class="index_menu_right">
+    <image class="index_menu_img" src="../../image/practice_img.png">
+      <text class="index_menu_t"></text>
+    </image>
+  </view>
+</view>
+</navigator>
+<!-- 添加预案 -->
+<navigator url="/page/item/edit-add-replan-name/edit-add-replan-name?type=0">
+<view class="index_menu_box" >
+  <view class="index_menu_left">
+    <text>添加预案</text>
+  </view>
+  <view class="index_menu_right">
+    <image class="index_menu_img" src="../../image/exam_1.png">
+      <text class="index_menu_t"></text>
+    </image>
+  </view>
+</view>
+</navigator>
+<!-- 预案文档 -->
+ <navigator url="/page/item/new/new">
+<view class="index_menu_box"  >
+  <view class="index_menu_left">
+    <text>预案文档</text>
+  </view>
+  <view class="index_menu_right">
+    <image class="my_menu_img" src="../../image/replanfile_aa.png">
+      <text class="index_menu_t"></text>
+    </image>
+  </view>
+</view>
+</navigator>
+
+
+<!-- 通讯录 -->
+<navigator url="/page/home/phone/phone">
+<view class="index_menu_box" >
+  <view class="index_menu_left">
+    <text>企业通讯录</text>
+  </view>
+  <view class="index_menu_right">
+    <image class="myone_menu_img" src="../../image/phone_list.png">
+      <text class="index_menu_t"></text>
+    </image>
+  </view>
+</view>
+</navigator> 
+
+ 
+ 
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+<!-- 添加预案组织 -->
+<!-- 
+<view class="index_btn_box">
+ <navigator url="/page/item/new/new">
+  <view class="index_btn_li" >
+    <view class="index_btn_li_top">添加组织</view>
+    <view class="index_btn_li_bottom">
+      <image src="../../image/orga.png" class="index_btn_img"></image>
+    </view>
+  </view>
+  </navigator> -->
+  <!-- 添加人员 -->
+  <!-- <navigator url="/page/component/index">
+  <view class="index_btn_li"  >
+    <view class="index_btn_li_top">添文档</view>
+    <view class="index_btn_li_bottom">
+      <image src="../../image/addnumber.png" class="index_btn_img"></image>
+    </view>
+  </view>
+  </navigator> -->
+  <!-- 通讯录 -->
+  <!-- <navigator url="/page/home/phone/phone">
+  <view class="index_btn_li" >
+    <view class="index_btn_li_top">通讯录</view>
+    <view class="index_btn_li_bottom">
+      <image src="../../image/phonenum.png" class="index_btn_img"></image>
+    </view>
+  </view>
+  </navigator> -->
+  

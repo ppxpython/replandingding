@@ -1,0 +1,73 @@
+ 
+ 
+ 
+
+ 
+<view class="container">
+  <view class="mytitle">
+    <text id="font" class='mytitle' >{{title}}</text>
+  </view>
+  <view class="news">
+    <block >  
+        <!-- 这个是navigator -->
+  <navigator url="../flow-detail/flow-detail?id={{item.id}}" a:for="{{flow_list}}"  data-index="{{index}}"> 
+        <!-- <view  a:for="{{flow_list}}" >       
+  -->
+      <view  class="{{userCellId==index?'userCellActive':'userCell'}}" data-index="{{index}}" onTap="userListAction">
+      <view class="new"  >
+      <view  >
+    <text id="font">第{{index+1}}步:{{item.flow_name}}</text>
+         <view class="title">
+     <text >{{item.flow_content}}</text>
+  </view>
+  </view>
+     <view class="text"   >
+          <text>{{item.id}}</text>        
+        </view> 
+      </view> 
+      </view>
+ 
+    <!-- </view> -->
+    </navigator>
+    <!-- 这个是navigator -->
+     </block>
+ 
+   
+</block>
+  </view>
+  
+ 
+</view>
+  
+
+
+
+
+
+<!-- <view class="container">
+  <view class="mytitle">
+    <text id="font">{{title}}</text>
+  </view>
+  <view class="news">
+    <block >
+           
+      <navigator url="../replan/replan?id={{item.id}}" a:for="{{flow_list}}" a:for-index="id">
+      <view class="new" >
+      <view class="title">
+    <text id="font">{{item.flow_name}}</text>
+    <text id="font">{{item.flow_content}}</text>
+  </view>
+     <view class="text"   >
+          <text>{{item.id}}</text>        
+        </view> 
+      </view> 
+    </navigator>
+     </block>
+ 
+   
+</block>
+  </view>
+  
+ 
+</view> -->
+  

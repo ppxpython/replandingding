@@ -1,0 +1,58 @@
+<!--pages/user/user.aml-->
+<view class='container'>
+  <view class='user'>
+    <navigator url="../user-edit/user-edit">
+      <image class='userimg' src='{{avatar}}'></image>
+    </navigator>
+    <view class='userinfo'>
+      <text class='username'>{{name}}</text>
+      <text class='tel'>{{userid}}</text>
+      <view>
+       
+      </view>
+      
+    </view>
+ 
+  </view>
+     <view class='account'>
+    <navigator class='item' url=''>
+      <text class='text'> </text>
+      <text class='num'> 我的电话<text></text></text>
+    </navigator>
+    <navigator class='item' url='../coupons-my/coupons-my'>
+      <text class='text'> </text>
+      <text class='num'>{{mobile}} <text></text> </text>
+    </navigator>
+  </view>
+ 
+  <view class='list'>
+    <view class='section'>
+      <navigator class='row' url='/page/home/phone/phone'>
+        <view class='left'>
+          <image class='icon' src='/img/user/user-1-2.png'></image>
+          <text class='text'>我的工友</text>
+        </view>
+        <image class='arrow' src='/img/arrow-right.png'></image>
+      </navigator>
+      <navigator class='row' url='../audit/audit'>
+        <view class='left'>
+          <image class='icon' src='/img/user/user-1-3.png'></image>
+          <text class='text'  onTap="pay">扫一扫</text>
+        </view>
+        <image class='arrow' src='/img/arrow-right.png'></image>
+      </navigator>
+    </view>
+   
+    <view class='section'>
+      <view class='row'>
+    <button open-type="share"></button>
+      
+        <view class='left'>
+          <image class='icon' onTap="onShareAppMessage"></image>
+          <text class='text'>分享给朋友</text>
+        </view>
+        <image class='arrow' src='/img/arrow-right.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

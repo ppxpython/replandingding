@@ -1,0 +1,54 @@
+
+ 
+    
+
+<view class='container'>
+  <view class="page-section">
+   <view class="page-section-demo">
+      <view class="search-outer">
+        <input
+          class="search-input"
+          placeholder="搜索"
+          value="{{search}}"
+          onConfirm="doneSearch"
+          onInput="handleSearch"
+        />
+          <!-- <text class="search-cancel" onTap="clearSearch">取消</text> -->
+         <!-- <text class="search-cancel" onTap="okSearch">确定</text> -->
+         
+      </view>
+    </view>
+  </view>
+ 
+</view>     
+  <!-- <view class='search'>
+    <icon type="search" color="#4c4c4c" size="18" onTap='query'></icon>
+   
+        
+    <input type="text" maxlength="100" placeholder='输入预案名称' confirm-type='search' value="{{inputValue}}" onInput='inputBind' onConfirm='query' />
+  </view> -->
+ <view class='tabmenu'>
+   
+    <view class='titem' onTap='clearSearch'  '>取消</view>
+    <view class='vline'></view>
+    <view class='titem' onTap='okSearch' '>确定</view>
+  </view>
+ 
+  <!-- <view class='tabmenu'>
+   
+    <view class='titem' onTap='clearSearch' data-type="0" style='color:{{type == 0 ? color : ""}}; border-bottom-color:{{type == 0 ? color : "#4169E1"}}; border-bottom-width: 1px; border-bottom-style: solid;'>取消</view>
+    <view class='vline'></view>
+    <view class='titem' onTap='onTabClick' data-type='1' style='float: right;' style='color:{{type == 1 ? color : ""}}; border-bottom-color:{{type == 1 ? color : "#4169E1"}}; border-bottom-width: 1px; border-bottom-style: solid;'>正在进行预案</view>
+  </view> -->
+ 
+      <view class="container">
+ <navigator url="../replan/replan?id={{item.id}}" a:for="{{list}}" a:for-index="id">
+ <view class="m-home m-home-register"  hover-class="press_hover" data-destination="register"  >
+  <view class="m-home_text">
+  <view class="m-home_h2"><text>{{item.planName}}</text></view>
+  </view>
+  </view>
+    </navigator>
+
+     </view> 
+ 

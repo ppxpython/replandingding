@@ -1,0 +1,31 @@
+ 
+
+ 
+<view class="container">
+  <view class="mytitle">
+    <text id="font" class='mytitle' >{{title}}</text>
+  </view>
+  <view class="news">
+    <block >      
+      <navigator url="../put-replan-flow/put-replan-flow?id={{item.id}}" a:for="{{flow_list}}" a:for-index="id">
+      <view class="new" >
+      <view  >
+    <text id="font">{{item.flow_name}}</text>
+         <view class="title">
+     <text >{{item.flow_content}}</text>
+  </view>
+  </view>
+     <view class="text"   >
+          <text>{{item.id}}</text>        
+        </view> 
+      </view> 
+    </navigator>
+     </block>
+ 
+   
+</block>
+  </view>
+  
+ 
+</view>
+  

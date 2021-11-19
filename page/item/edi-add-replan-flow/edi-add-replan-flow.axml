@@ -1,0 +1,27 @@
+<!--pages/edit-resume-edu/edit-resume-edu.aml-->
+<view class="work-box">
+  <view class="work-items">
+  <!-- // -->
+<view class="work-item"  a:for="{{resumeEduList}}" a:for-item="item" a:key="{{item.id}}" >
+  <view catchTap="editEduListTap" data-eduid="{{item.id}}">
+      <view class="work-date">
+        <text>{{item.flow_name}}</text>
+        <view class="edit-btn blue">
+          <image class="icon-edit" src="/images/edit_pen.png"></image>
+          <text>编辑</text>
+        </view>
+      </view>
+      <view class="edu-colun">   
+        <text>{{item.flow_content}}</text>
+      </view>
+    </view>
+</view>
+  </view>
+</view>
+
+<view class="btn-box">
+  <button class="btn-sure m-b" size="default" hover-class="btn-sure-hover" catchTap="editEduListTap"> 添加流程</button>
+  <button class="btn-sure m-b" size="default" hover-class="btn-sure-hover" catchTap="subOver"> 完成 </button>
+  <button hidden="{{isHaveResume}}" class="btn-remove" size="default" hover-class="btn-sure-hover" catchTap="subPre"> 上一步 </button>
+  
+</view>

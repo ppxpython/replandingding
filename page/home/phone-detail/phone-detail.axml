@@ -1,0 +1,72 @@
+    <!-- <view class="container">
+    <view>
+      {{user_detail.name}}
+    </view>
+ 
+  <view>
+  {{user_detail.mobile}}
+    
+  </view>
+  <view>
+  {{user_detail.userid}}
+    
+  </view>
+  <view>
+  {{user_detail.title}}
+    
+  </view>
+  <view a:for="{{user_detail.dept_id_list}}">
+  {{item}}
+  </view>
+  -->
+
+  <!--user.wxml-->
+
+<view class="container">
+  <!-- <view a:if=="{{user_detail.avatar==''}}"")> -->
+      
+  
+  <view class="user_base_info">
+    <view class="user_avatar">
+   
+
+        <image src="{{user_detail.avatar}}"></image>
+    </view>
+    <view class="user_info">
+      <text>
+      
+        userid：{{user_detail.userid}}
+        姓名：{{user_detail.name}}
+        
+      </text>
+    </view>
+  </view>
+     <!-- </view> -->
+
+ 
+
+ <view class="user_addr_manage">
+    <view class="user_addr_title">【个人信息】</view>
+    <block >
+      <view class="user_addr_item">
+          <text class="addr_sub">职位：{{user_detail.title}}</text>
+          <view class="addr_edit"></view>
+      </view> 
+    </block>
+     <block >
+      <view class="user_addr_item">
+          <text class="addr_sub" onTap='call'>电话：{{user_detail.mobile}}【点击拨打】</text>
+          <view class="addr_edit"></view>
+      </view> 
+    </block>
+      <block >
+      <view class="user_addr_item">
+          <text class="addr_sub" onTap="take">【点击开始聊天】</text>
+          <view class="addr_edit"></view>
+      </view> 
+    </block>
+    
+    
+ </view>
+  
+</view>

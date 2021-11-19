@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "page/item/index",
+    "page/home/search/search",
+    "page/login/login",
+    "page/item/new/new",
+    "page/home/index",
+    "page/home/replanList/replanList",
+    "page/component/index",
+    "page/home/replan/replan",
+    "page/component/replanStatusNum/replanStatusNum",
+    "page/home/phone/phone",
+    "page/item/edit-add-replan-name/edit-add-replan-name",
+    "page/item/edit-add-replan-organization/edit-add-replan-organization",
+    "page/item/edit-add-replan-organization-detail/edit-add-replan-organization-detail",
+    "page/home/replan-detail/replan-detail",
+    "page/home/doreplan/doreplan",
+    "page/home/flow-detail/flow-detail",
+    "page/home/phone-detail/phone-detail",
+    "page/item/edi-add-replan-flow/edi-add-replan-flow",
+    "page/item/edi-add-replan-flow-detail/edi-add-replan-flow-detail",
+    "page/user/index",
+    "page/user/explain/explain",
+    "page/home/replan-deps/replan-deps",
+    "page/home/replan-users/replan-users",
+    "page/home/put-replan-summary/put-replan-summary",
+    "page/home/put-replan-flow/put-replan-flow"
+  ],
+  "window": {
+    "defaultTitle": "应急预案自动执行系统",
+    "backgroundColor": "#F5F5F9",
+    "titleBarColor": "#6495ED",
+    "pullRefresh": false,
+    "allowsBounceVertical": "YES",
+    "supportColorScheme": "dark"
+  },
+  "tabBar": {
+    "textColor": "#404040",
+    "selectedColor": "#108ee9",
+    "backgroundColor": "#F5F5F9",
+    "items": [
+      {
+        "pagePath": "page/home/index",
+        "icon": "image/icon_home.png",
+        "activeIcon": "image/icon_home_HL.png",
+        "name": "首页"
+      },
+      {
+        "pagePath": "page/item/index",
+        "icon": "image/icon_replanitem.png",
+        "activeIcon": "image/icon_replanitem_HL.png",
+        "name": "应用"
+      },
+      {
+        "pagePath": "page/user/index",
+        "icon": "image/icon_user.png",
+        "activeIcon": "image/icon_user_HL.png",
+        "name": "个人中心"
+      }
+    ]
+  },
+  "debug": true
+}

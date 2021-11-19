@@ -1,0 +1,26 @@
+<view class='top-wrapper'>
+  <view class='top-container'>
+    <view class='action-container'>
+      <view class='edit'>
+ 
+          
+      </view>
+    </view>
+  </view>
+  <view class='follow-container'>
+    <view class='follow-item' catchtap='_jumptoFollowProblem'>
+      <text>{{folProbCount.value}}</text>
+      <text >已完成的流程</text>
+      
+    </view>
+    <view class='follow-item' catchtap='_jumptoAttentionUser'>
+      <text>{{folPersonCount.value}}</text>
+      <text  >未完成的流程</text>     
+    </view>
+
+    <view class='follow-item' catchtap='_jumptoFollowMeUser'>
+      <text>{{folSelfCount.value}}</text>
+      <text >关注我的人</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+  <view class="item-cell">
+    <view class="item-cell-bd">
+      <text>预案描述</text>
+    </view>
+  </view>
+  <view class="item-cell-textarea">
+    <textarea onInput="plan_summaryTap"  onFocus="plan_summaryfocus" onBlur=" plan_summaryblur" class="item-textarea big bg" value="{{plan_summary}}" placeholder="{{plan_summary}}" maxlength="200" />
+    <view class="textarea-count">
+      <text>{{plan_summaryLen}}/200</text>
+    </view>
+  </view>
+
+
+  <view class="btn-box">
+  <button class="btn-sure m-b" size="default" hover-class="btn-sure-hover" catchTap="change"> 确定</button>
+</view> 

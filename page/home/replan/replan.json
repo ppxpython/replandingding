@@ -1,0 +1,6 @@
+ {
+  "usingComponents":{
+    "replanflowstatus":"../../../component/replanflowstatus/replanflowstatus"
+   
+  }
+}

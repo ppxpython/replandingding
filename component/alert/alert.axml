@@ -1,0 +1,16 @@
+ <view class='toast-out' wx:if='{{isShow}}'>　　　　
+         <view class='toast-in'>　　　　　　
+          <view class="title">重置设备</view>  
+             <view class='toast-txt'>
+             　  <view class="toast-image">
+                 <image src="{{icon}}"></image>　
+                 </view>
+                 <view class="toast-text">
+              
+          <view class="step" wx:for="{{txt}}" wx:key="*this">{{item}}</view>
+                 </view>　　
+             </view>
+             <view  bindtap="toastHidden" class="knowledge">好的，我知道啦</view>　
+         </view>
+     </view>
+ 

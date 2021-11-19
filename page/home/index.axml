@@ -1,0 +1,165 @@
+<view class="app">
+  <swiper style='height:360rpx;' indicator-dots="true" autoplay="true" interval="5000"  >
+    <swiper-item >
+      <image src="/image/banner-1.png" class="slide-image" />
+    </swiper-item>
+      <swiper-item >
+      <image src="/image/banner-2.png" class="slide-image" />
+    </swiper-item>
+      <swiper-item >
+      <image src="/image/banner-3.png" class="slide-image" />
+    </swiper-item>
+  </swiper>
+
+    <view class="menu">
+    <view class="title">
+      <text>项目操作</text>
+    </view>
+     <navigator  url="/page/home/replanList/replanList">
+      <view class="item">
+        <view class="icon menu_bg_01">
+          <image src="/image/home_planlist.png"></image>
+        </view>
+        <text>我的预案</text>
+      </view>
+    </navigator>
+   
+    
+    <navigator url="/page/item/new/new">
+      <view class="item">
+        <view class="icon menu_bg_03">
+          <image src="/image/case.png"></image>
+        </view>
+        <text>启动日志</text>
+      </view>
+    </navigator>
+      <navigator url="/page/item/edit-add-replan-name/edit-add-replan-name">
+      <view class="item">
+        <view class="icon menu_bg_02">
+          <image src="/image/home_addplan.png"></image>
+        </view>
+        <text>添加预案</text>
+      </view>
+    </navigator>
+      <navigator url="/page/home/phone/phone">
+      <view class="item">
+        <view class="icon menu_bg_05">
+          <image src="/image/contact.png"></image>
+        </view>
+        <text>通讯录</text>
+      </view>
+    </navigator>
+    <!-- <navigator url="/pages/news/index">
+      <view class="item">
+        <view class="icon menu_bg_04">
+          <image src="/image/news.png"></image>
+        </view>
+        <text>动态</text>
+      </view>
+    </navigator> -->
+      
+  </view>
+  <view class="menu">
+   <view class="case" >
+         <view class="title">
+           <text>更多功能</text>
+          </view>
+    </view>
+
+    <navigator url="/pages/case/index">
+      <view class="item">
+        <view class="icon menu_bg_05">
+          <image src="/image/case.png"></image>
+        </view>
+        <text>使用文档</text>
+      </view>
+    </navigator>
+     
+    <navigator url="/pages/contact/index">
+      <view class="item">
+        <view class="icon menu_bg_02">
+          <image src="/image/contact.png"></image>
+        </view>
+        <text>联系我们</text>
+      </view>
+    </navigator>
+       <!-- <navigator > -->
+      <view class="item" >
+        <view class="icon menu_bg_04">
+          <image src="/image/home_see.png"  onTap="pay"></image>
+        </view>
+        <text  onTap="pay">扫一扫</text>
+      </view>
+    <!-- </navigator> -->
+  </view>
+  <!-- <view class="block">
+    <view class="product">
+      <scroll-view scroll-x="true" class="pro">
+         
+        <view class="item" >
+          <navigator url="/pages/product/detail">
+            <image src="/image/p2.png" mode='aspectFit'></image>
+            <view class='name'>最近完成</view>
+          </navigator>
+        </view>
+        <view class="item" >
+          <navigator url="/page/home/replan">
+            <image src="/image/p3.png" mode='aspectFit'></image>
+            <view class='name'>进行中任务</view>
+          </navigator>
+        </view>
+         <view class="item" >
+          <navigator url="/pages/product/detail">
+            <image src="/image/p3.png" mode='aspectFit'></image>
+            <view class='name'>即将开始</view>
+          </navigator>
+        </view>
+           <view class="item" >
+          <navigator url="/pages/product/detail">
+            <image src="/image/p3.png" mode='aspectFit'></image>
+            <view class='name'>完成</view>
+          </navigator>
+        </view>
+      </scroll-view>
+    </view>
+  </view> -->
+   
+   <view class="block">
+    <view class="title">
+      <text>专项应急预案</text>
+    </view>
+    <view class="case" >
+      <navigator url="/page/user/explain/explain">
+        <view class="item bdbt">
+          <view class="lt">
+            <image src="../../image/toke.png" mode='aspectFit'></image>
+          </view>
+          <view class="rt">
+            <view class="tit">
+            如何制定应急预案
+            </view>
+            <view class="info">
+            <text> 首先应急预案是有很强的针对性的，主要是应对那些可能造成企业、系统人员死亡或严重伤害、设备和环境受到严重破坏的突发性灾害。
+</text>
+             <text>再者应急预案是对日常安全管理工作的必要补充，应急计划应以完善的预防措施为基础，体现“安全第一、预防为主”的方针。
+</text>
+ 然后应急预案应结合实际，措施明确具体，具有很强的可操作性。这就对应急措施的制定提出了很高的要求，最重要的一点就是可操作性强。
+最后应急预案应经常检查修订，以保证先进科学的防灾、减灾设备和措施被采用。安全生产事故灾难善后处置工作结束后，现场应急救援指挥部分析总结应急救援经验教训，提出改进应急救援工作的建议，完成应急救援总结报告并及时上报。
+综上所述，为应对各种突发重大事故，必须要制定出切实可行的应急处理救援预案，有条不紊地处理这些事故，而不至于临阵手忙脚乱，贻误战机。救援人员必须要头脑冷静，处理事情要坚决果断，按照救援预案，立即展开营救工作，千万不要拖泥带水，耽误救援的最好时机。
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </view> 
+  </view>
+  <view class="block">
+    <view class="title">
+      <text>有问题，请联系管理员</text>
+    </view>
+  </view>
+</view>
+ 
+
+ 
+ 
+ 
